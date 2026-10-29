@@ -1,4 +1,4 @@
-# Catálogo de Jogos API
+#Catálogo de Jogos API
 
 Projeto de estudo de Laboratório de Programação FullStack: API REST de jogos com CRUD, filtro por gênero, DTOs, validação, erros padronizados e injeção por construtor.
 
