@@ -1,0 +1,34 @@
+### Listar
+GET http://localhost:8080/jogos
+Accept: application/json
+
+### Criar
+POST http://localhost:8080/jogos
+Content-Type: application/json
+Accept: application/json
+
+{"nome":"Minecraft","genero":"Aventura","preco":99.90}
+
+### Buscar por ID (ajuste ao ID criado)
+GET http://localhost:8080/jogos/1
+Accept: application/json
+
+### Filtrar por gênero
+GET http://localhost:8080/jogos?genero=Aventura
+Accept: application/json
+
+### Atualizar completamente
+PUT http://localhost:8080/jogos/1
+Content-Type: application/json
+Accept: application/json
+
+{"nome":"Minecraft Java","genero":"Aventura","preco":89.90}
+
+### Excluir
+DELETE http://localhost:8080/jogos/1
+
+### Dados inválidos: 400
+POST http://localhost:8080/jogos
+Content-Type: application/json
+
+{"nome":"","genero":"RPG","preco":-10}
